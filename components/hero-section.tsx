@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ChevronDown } from "lucide-react"
+import Link from "next/link"
 
 interface TimeLeft {
   days: number
@@ -75,7 +76,7 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/20 via-background to-background" />
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
-      
+
       {/* Grid pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,rgb(255_255_255/0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgb(255_255_255/0.03)_1px,transparent_1px)] bg-[size:60px_60px]" />
 
@@ -89,12 +90,12 @@ export function HeroSection() {
 
           {/* Main title */}
           <h1 className="text-5xl sm:text-7xl lg:text-8xl font-bold text-foreground tracking-tight">
-            COMPU<span className="text-primary">FEST</span>
+            Compu<span className="text-primary">Fest</span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            The premier technology conference bringing together innovators, researchers, 
+            The premier technology conference bringing together innovators, researchers,
             and industry leaders to shape the future of computing.
           </p>
 
@@ -111,11 +112,11 @@ export function HeroSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg">
-              Register Now
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg">
+              <Link href="#">Register Now</Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-border text-foreground hover:bg-secondary px-8 py-6 text-lg bg-transparent">
-              Learn More
+            <Button asChild size="lg" variant="outline" className="border-border text-foreground hover:bg-secondary px-8 py-6 text-lg bg-transparent">
+              <Link href="#about">Learn More</Link>
             </Button>
           </div>
         </div>

@@ -1,31 +1,13 @@
 import { Award } from "lucide-react"
 
-const judges = [
-  {
-    name: "Dr. Amanda Foster",
-    role: "Dean of Engineering",
-    institution: "YachayTech University",
-    expertise: "Artificial Intelligence",
-  },
-  {
-    name: "Robert Kim",
-    role: "Senior Technical Director",
-    institution: "Google DeepMind",
-    expertise: "Machine Learning",
-  },
-  {
-    name: "Dr. Patricia Mendez",
-    role: "Innovation Director",
-    institution: "IEEE Ecuador Section",
-    expertise: "IoT & Embedded Systems",
-  },
-  {
-    name: "Thomas Bradley",
-    role: "Founder & CEO",
-    institution: "TechVentures Capital",
-    expertise: "Tech Startups",
-  },
-]
+type typeJudge = {
+  name: string;
+  role: string;
+  institution: string;
+  expertise: string;
+}
+
+const judges: typeJudge[] = []
 
 export function JudgesSection() {
   return (
@@ -37,13 +19,13 @@ export function JudgesSection() {
             Expert Panel of Judges
           </h2>
           <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Our distinguished panel of judges brings expertise from academia, industry, 
+            Our distinguished panel of judges brings expertise from academia, industry,
             and entrepreneurship to evaluate innovative projects.
           </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {judges.map((judge) => (
+          {judges.length > 0 ? judges.map((judge) => (
             <div
               key={judge.name}
               className="group relative bg-card border border-border rounded-2xl p-6 hover:border-primary/50 transition-all duration-300"
@@ -69,7 +51,9 @@ export function JudgesSection() {
                 <p className="text-sm text-foreground mt-1">{judge.expertise}</p>
               </div>
             </div>
-          ))}
+          )) : <div className="text-center col-span-4">
+            <p className="text-muted-foreground text-lg font-semibold">To be defined</p>
+          </div>}
         </div>
       </div>
     </section>

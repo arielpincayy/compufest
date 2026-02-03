@@ -1,49 +1,18 @@
 import { Twitter, Linkedin, Globe } from "lucide-react"
 
-const speakers = [
-  {
-    name: "Dr. Elena Martinez",
-    role: "AI Research Director",
-    company: "TechLabs Global",
-    image: "/speakers/speaker-1.jpg",
-    socials: { twitter: "#", linkedin: "#" },
-  },
-  {
-    name: "Prof. James Chen",
-    role: "Computer Science Chair",
-    company: "MIT",
-    image: "/speakers/speaker-2.jpg",
-    socials: { twitter: "#", linkedin: "#", website: "#" },
-  },
-  {
-    name: "Sarah Thompson",
-    role: "CTO",
-    company: "CloudNine Systems",
-    image: "/speakers/speaker-3.jpg",
-    socials: { linkedin: "#", website: "#" },
-  },
-  {
-    name: "Dr. Michael Okonkwo",
-    role: "Quantum Computing Lead",
-    company: "QuantumTech",
-    image: "/speakers/speaker-4.jpg",
-    socials: { twitter: "#", linkedin: "#" },
-  },
-  {
-    name: "Lisa Wang",
-    role: "VP of Engineering",
-    company: "DataFlow Inc",
-    image: "/speakers/speaker-5.jpg",
-    socials: { twitter: "#", linkedin: "#" },
-  },
-  {
-    name: "Dr. Carlos Rivera",
-    role: "Cybersecurity Expert",
-    company: "SecureNet",
-    image: "/speakers/speaker-6.jpg",
-    socials: { linkedin: "#", website: "#" },
-  },
-]
+type typeSpeaker = {
+  name: string;
+  role: string;
+  company: string;
+  image: string;
+  socials: {
+    twitter?: string;
+    linkedin?: string;
+    website?: string;
+  }
+}
+
+const speakers: typeSpeaker[] = []
 
 export function SpeakersSection() {
   return (
@@ -55,13 +24,13 @@ export function SpeakersSection() {
             Learn from Industry Leaders
           </h2>
           <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Our carefully curated lineup of keynote speakers brings decades of combined experience 
+            Our carefully curated lineup of keynote speakers brings decades of combined experience
             in technology, research, and innovation.
           </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {speakers.map((speaker) => (
+          {speakers.length > 0 ? speakers.map((speaker) => (
             <div
               key={speaker.name}
               className="group bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300"
@@ -102,7 +71,9 @@ export function SpeakersSection() {
                 </div>
               </div>
             </div>
-          ))}
+          )) : <div className="text-center col-span-3">
+            <p className="text-muted-foreground text-lg font-semibold">Coming Soon</p>
+          </div>}
         </div>
       </div>
     </section>

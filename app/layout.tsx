@@ -13,24 +13,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: 'COMPUFEST 2026 | YachayTech University',
   description: 'Join us at COMPUFEST 2026 - The premier technology conference at YachayTech University featuring innovation, keynote speakers, and cutting-edge tech exhibitions.',
-  generator: 'v0.app',
-  icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
-  },
+  icons: '/proto_logo.png',
 }
 
 export default function RootLayout({
