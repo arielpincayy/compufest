@@ -33,9 +33,9 @@ export function AboutSection() {
             Where Innovation Meets Excellence
           </h2>
           <p className="mt-6 text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            COMPUFEST is YachayTech University&apos;s flagship technology event, bringing together 
-            the brightest minds in computing, artificial intelligence, and digital innovation. 
-            Join us for three days of inspiring talks, workshops, and networking opportunities 
+            COMPUFEST is YachayTech University&apos;s flagship technology event, bringing together
+            the brightest minds in computing, artificial intelligence, and digital innovation.
+            Join us for three days of inspiring talks, workshops, and networking opportunities
             that will shape your understanding of tomorrow&apos;s technology.
           </p>
         </div>
@@ -59,9 +59,9 @@ export function AboutSection() {
         <div className="mt-20 grid grid-cols-2 lg:grid-cols-4 gap-8">
           {[
             { value: "50+", label: "Speakers" },
-            { value: "1000+", label: "Attendees" },
+            { value: "500+", label: "Attendees" },
             { value: "30+", label: "Workshops" },
-            { value: "3", label: "Days" },
+            { value: "1", label: "Day" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
               <div className="text-4xl sm:text-5xl font-bold text-primary">{stat.value}</div>

@@ -19,30 +19,10 @@ export function VotingSection() {
                         </h2>
 
                         <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-12">
-                            Your opinion is key. Both the jury and attendees can rate the projects to choose the best of the expo.
+                            Jury voting for the best projects.
                         </p>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl">
-                            {/* Attendee Voting */}
-                            <div className="bg-background/50 backdrop-blur-sm border border-border rounded-2xl p-8 flex flex-col items-center text-center group hover:border-primary/50 transition-all">
-                                <div className="w-48 h-48 bg-white rounded-xl p-4 mb-6 relative group-hover:scale-105 transition-transform">
-                                    {/* Placeholder for QR */}
-                                    <div className="w-full h-full border-2 border-dashed border-gray-200 flex items-center justify-center">
-                                        <QrCode className="w-24 h-24 text-gray-400" />
-                                    </div>
-                                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-white/90">
-                                        <p className="text-[10px] font-bold text-black uppercase tracking-widest text-center px-4">
-                                            Scan to vote for your favorite stand
-                                        </p>
-                                    </div>
-                                </div>
-                                <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
-                                    <Users className="w-5 h-5 text-primary" /> Public Vote
-                                </h3>
-                                <p className="text-sm text-muted-foreground">
-                                    Use the QRs located at each stand to rate the best exhibitor.
-                                </p>
-                            </div>
+                        <div className="w-full max-w-2xl">
 
                             {/* Jury Evaluation */}
                             <div className="bg-background/50 backdrop-blur-sm border border-border rounded-2xl p-8 flex flex-col items-center text-center group hover:border-primary/50 transition-all">
