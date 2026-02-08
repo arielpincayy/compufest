@@ -13,14 +13,14 @@ const quickLinks = [
   { label: "Judges", href: "#judges" },
   { label: "Sponsors", href: "#sponsors" },
   { label: "Schedule", href: "#" },
-  { label: "Register", href: "#" },
+  { label: "Register", href: "/register" },
 ]
 
 export function Footer() {
   return (
     <footer id="contact" className="bg-card border-t border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
@@ -30,7 +30,7 @@ export function Footer() {
               <span className="text-foreground font-bold text-xl tracking-tight">COMPUFEST</span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              YachayTech University&apos;s premier technology conference, 
+              YachayTech University&apos;s premier technology conference,
               bringing innovation and excellence together since 2020.
             </p>
             <div className="flex gap-4">
@@ -53,7 +53,7 @@ export function Footer() {
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.label}>
-                  <a 
+                  <a
                     href={link.href}
                     className="text-muted-foreground hover:text-foreground transition-colors text-sm"
                   >
@@ -91,26 +91,6 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Newsletter */}
-          <div>
-            <h4 className="text-foreground font-semibold mb-4">Stay Updated</h4>
-            <p className="text-muted-foreground text-sm mb-4">
-              Subscribe to our newsletter for the latest updates and announcements.
-            </p>
-            <form className="space-y-3">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="w-full px-4 py-3 bg-secondary border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm"
-              />
-              <button
-                type="submit"
-                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-3 rounded-lg font-medium transition-colors text-sm"
-              >
-                Subscribe
-              </button>
-            </form>
-          </div>
         </div>
 
         {/* Bottom bar */}

@@ -113,7 +113,7 @@ export function HeroSection() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg">
-              <Link href="#">Register Now</Link>
+              <Link href="/register">Register Now</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-border text-foreground hover:bg-secondary px-8 py-6 text-lg bg-transparent">
               <Link href="#about">Learn More</Link>

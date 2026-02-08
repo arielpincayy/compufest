@@ -1,27 +1,26 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
-@custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #000000;
-  --foreground: #ffffff;
-  --card: #1a1a1a;
-  --card-foreground: #ffffff;
-  --popover: #1a1a1a;
-  --popover-foreground: #ffffff;
+  --background: #ffffff;
+  --foreground: #000000;
+  --card: #ffffff;
+  --card-foreground: #000000;
+  --popover: #ffffff;
+  --popover-foreground: #000000;
   --primary: #e11d1d;
   --primary-foreground: #ffffff;
-  --secondary: #9CA3AF;
+  --secondary: #f3f4f6;
   --secondary-foreground: #000000;
-  --muted: #9CA3AF;
-  --muted-foreground: #ffffff;
+  --muted: #f3f4f6;
+  --muted-foreground: #6b7280;
   --accent: #e11d1d;
   --accent-foreground: #ffffff;
   --destructive: #08a6c2;
   --destructive-foreground: #ffffff;
-  --border: #9CA3AF;
-  --input: #1a1a1a;
+  --border: #e5e7eb;
+  --input: #ffffff;
   --ring: #e11d1d;
   --chart-1: #08a6c2;
   --chart-2: #e11d1d;
@@ -29,48 +28,13 @@
   --chart-4: #e11d1d;
   --chart-5: #08a6c2;
   --radius: 0.625rem;
-  --sidebar: #000000;
-  --sidebar-foreground: #ffffff;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #000000;
   --sidebar-primary: #e11d1d;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #9CA3AF;
+  --sidebar-accent: #f3f4f6;
   --sidebar-accent-foreground: #000000;
-  --sidebar-border: #9CA3AF;
-  --sidebar-ring: #e11d1d;
-}
-
-.dark {
-  --background: #000000;
-  --foreground: #ffffff;
-  --card: #1a1a1a;
-  --card-foreground: #ffffff;
-  --popover: #1a1a1a;
-  --popover-foreground: #ffffff;
-  --primary: #e11d1d;
-  --primary-foreground: #ffffff;
-  --secondary: #9CA3AF;
-  --secondary-foreground: #000000;
-  --muted: #9CA3AF;
-  --muted-foreground: #ffffff;
-  --accent: #e11d1d;
-  --accent-foreground: #ffffff;
-  --destructive: #08a6c2;
-  --destructive-foreground: #ffffff;
-  --border: #9CA3AF;
-  --input: #1a1a1a;
-  --ring: #e11d1d;
-  --chart-1: #08a6c2;
-  --chart-2: #e11d1d;
-  --chart-3: #9CA3AF;
-  --chart-4: #e11d1d;
-  --chart-5: #08a6c2;
-  --sidebar: #000000;
-  --sidebar-foreground: #ffffff;
-  --sidebar-primary: #e11d1d;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #9CA3AF;
-  --sidebar-accent-foreground: #000000;
-  --sidebar-border: #9CA3AF;
+  --sidebar-border: #e5e7eb;
   --sidebar-ring: #e11d1d;
 }
 
@@ -119,6 +83,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }

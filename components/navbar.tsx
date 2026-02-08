@@ -42,9 +42,11 @@ export function Navbar() {
           </div>
 
           <div className="hidden md:block">
-            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
-              Register Now
-            </Button>
+            <Link href="/register">
+              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                Register Now
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
