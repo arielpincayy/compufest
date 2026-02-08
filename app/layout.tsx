@@ -13,7 +13,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: 'COMPUFEST 2026 | YachayTech University',
   description: 'Join us at COMPUFEST 2026 - The premier technology conference at YachayTech University featuring innovation, keynote speakers, and cutting-edge tech exhibitions.',
-  icons: '/proto_logo.png',
+  icons: '/CompuFest.png',
 }
 
 export default function RootLayout({
