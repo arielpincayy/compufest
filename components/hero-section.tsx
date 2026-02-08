@@ -13,7 +13,7 @@ interface TimeLeft {
 }
 
 function calculateTimeLeft(): TimeLeft {
-  const targetDate = new Date("2026-10-15T09:00:00")
+  const targetDate = new Date("2026-05-07T09:00:00")
   const now = new Date()
   const difference = targetDate.getTime() - now.getTime()
 
@@ -85,7 +85,7 @@ export function HeroSection() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-secondary/50 border border-border rounded-full px-4 py-2">
             <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            <span className="text-sm text-muted-foreground">October 15, 2026 • YachayTech University</span>
+            <span className="text-sm text-muted-foreground">May 07, 2026 • YachayTech University</span>
           </div>
 
           {/* Main title */}
@@ -115,7 +115,7 @@ export function HeroSection() {
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg">
               <Link href="/register">Register Now</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-border text-foreground hover:bg-secondary px-8 py-6 text-lg bg-transparent">
+            <Button asChild size="lg" variant="outline" className="border-border text-foreground hover:bg-secondary hover:text-primary px-8 py-6 text-lg bg-transparent">
               <Link href="#about">Learn More</Link>
             </Button>
           </div>
